@@ -10,8 +10,9 @@ jobs:
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: ztskycn
-          password: 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
+          username: ${{ secrets.GHCR_USERNAME }} 
+          password: ${{ secrets.GHCR_TOKEN }}
+
       - name: Docker pull and push
         run: |
           docker pull k8s.gcr.io/ingress-nginx/controller:v0.35.0  
