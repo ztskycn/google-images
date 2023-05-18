@@ -16,5 +16,5 @@ jobs:
       - name: Docker pull and push
         run: |
           docker pull k8s.gcr.io/ingress-nginx/controller:v0.35.0  
-          docker tag  k8s.gcr.io/ingress-nginx/controller:v0.35.0  ghcr.io/ztskycn/ingress-nginx/controller:v0.35.0       
-          docker push ghcr.io/ztskycn/ingress-nginx/controller:v0.35.0
+          docker tag  k8s.gcr.io/ingress-nginx/controller:v0.35.0  ghcr.io/ztskycn/ingress-nginx-controller:v0.35.0       
+          docker push ghcr.io/ztskycn/ingress-nginx-controller:v0.35.0
